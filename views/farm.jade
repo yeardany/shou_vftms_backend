@@ -1,0 +1,246 @@
+﻿doctype html
+html
+    head
+        meta(charset='utf-8')
+        title 浅海智能生态增养殖信息平台
+        // 设置是否为缩放模式
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        // 新 Bootstrap 核心 CSS 文件
+        link(rel='stylesheet' type='text/css' href='bootstrap/3.3.4/css/bootstrap.css')
+        // jQuery文件。务必在bootstrap.min.js 之前引入
+        script(src='js/jquery.min.js')
+        // 最新的 Bootstrap 核心 JavaScript 文件
+        script(src='js/bootstrap.min.js')
+        // echarts JS
+        script(src='js/echarts.min.js')
+        // 轮播swiper文件
+        link(rel='stylesheet' type='text/css' href='css/swiper.min.css')
+        script(src='js/swiper.min.js')
+        // 界面样式
+        script(src='js/visual.js')
+        script(src='js/china.js')
+        script(src='js/chartMap.js')
+        link(rel='stylesheet' type='text/css' href='css/visual.css')
+    body.ksh
+        #load
+            .load_img
+                // 加载动画
+                img.jzxz1(src='images/jzxz1.png')
+                img.jzxz2(src='images/jzxz2.png')
+        .head_top
+            span 浅海智能生态增养殖信息平台
+        .visual
+            .visual_left
+                .visual_box
+                    .visual_title
+                        span 本周销量
+                        img(src='images/ksh33.png')
+                    #main1.visual_chart
+                .visual_box
+                    .visual_title
+                        span 年度产量走势
+                        img(src='images/ksh33.png')
+                    #main2.visual_chart
+                .visual_box
+                    .visual_title
+                        span 示范区销量
+                        img(src='images/ksh33.png')
+                    .visual_chart.sfzcll
+                        a
+                        a 獐子岛
+                        a 桑沟湾
+                        .sfzcll_pos_box
+                            .sfzcll_box
+                                img.sfzcll_bkJk(src='images/ksh34.png')
+                                img.sfzcll_bkJk(src='images/ksh34.png')
+                                img.sfzcll_bkJk(src='images/ksh34.png')
+                                img.sfzcll_bkJk(src='images/ksh34.png')
+                                label 鱼
+                                .sfzcll_smallBk
+                                    .ygl
+                                        span 4347.2万
+                                .sfzcll_smallBk
+                                    .ygh
+                                        span 4347.2万
+                                .clear
+                            .sfzcll_box
+                                img.sfzcll_bkJk(src='images/ksh34.png')
+                                img.sfzcll_bkJk(src='images/ksh34.png')
+                                img.sfzcll_bkJk(src='images/ksh34.png')
+                                img.sfzcll_bkJk(src='images/ksh34.png')
+                                label 虾
+                                .sfzcll_smallBk
+                                    .ygl
+                                        span 4347.2万
+                                .sfzcll_smallBk
+                                    .ygh
+                                        span 4347.2万
+                                .clear
+                            .sfzcll_box
+                                img.sfzcll_bkJk(src='images/ksh34.png')
+                                img.sfzcll_bkJk(src='images/ksh34.png')
+                                img.sfzcll_bkJk(src='images/ksh34.png')
+                                img.sfzcll_bkJk(src='images/ksh34.png')
+                                label 贝
+                                .sfzcll_smallBk
+                                    .ygl
+                                        span 4347.2万
+                                .sfzcll_smallBk
+                                    .ygh
+                                        span 4347.2万
+                                .clear
+            .visual_con
+                .visual_conTop
+                    .visual_conTop_box.visual_conTop1
+                        div
+                            h3 当前警情数
+                            p 3
+                            .conTop_smil
+                                a.sz
+                                    | 日环比
+                                    span +3%
+                                    i.fa.fa-long-arrow-up
+                                a.xd
+                                    | 周环比
+                                    span -2%
+                                    i.fa.fa-long-arrow-down
+                    .visual_conTop_box.visual_conTop1
+                        div
+                            h3 月警情数
+                            p 23
+                            .conTop_smil
+                                a.sz
+                                    | 月环比:
+                                    span +3%
+                                    i.fa.fa-long-arrow-up
+                    .visual_conTop_box.visual_conTop2
+                        div
+                            h3 环境指数
+                            p 优
+                            .conTop_smil
+                                a 风：东南风2级
+                                a 水质：优
+                                a 温度：25
+                    .visual_conTop_box.visual_conTop2
+                        div
+                            h3 生物健康指数
+                            p 优
+                            .conTop_smil
+                                a.null null
+                                a.xd 与同期持平
+                    .clear
+                .visual_conBot
+                    img.visual_conBot_l(src='images/ksh42.png')
+                    img.visual_conBot_2(src='images/ksh43.png')
+                    img.visual_conBot_3(src='images/ksh44.png')
+                    img.visual_conBot_4(src='images/ksh45.png')
+                    .visual_chart_text
+                        h2 智能生态信息平台
+                    #main8.visual_chart
+                    .visual_conBot_bot
+                        .visualSssf_left
+                            h3 实时视频监控
+                            .videoBox
+                                a(href='/manage') 獐子岛
+                                video(src='video/1.mp4' autoplay='' loop='')
+                                video(src='video/2.mp4' autoplay='' loop='' muted)
+                            .videoBox
+                                a(href='/manage') 桑沟湾
+                                video(src='video/1.mp4' autoplay='' loop='')
+                                video(src='video/2.mp4' autoplay='' loop='' muted)
+                            // <a style="display:block">全区域数据</a>
+                            // <div class="visualSssf_right">
+                            // <div class="visualSssf_right_box" id="main5"></div>
+                            // <div class="visualSssf_right_box" id="main6"></div>
+                            // <div class="visualSssf_right_box" id="main7"></div>
+                            // </div>
+                            .clear
+            .visual_right
+                .visual_box
+                    .visual_title
+                        span 本周发生事件
+                        img(src='images/ksh33.png')
+                    .swiper-container.visual_swiper1.visual_chart
+                        .swiper-wrapper
+                            #main3.swiper-slide
+                            #main31.swiper-slide
+                .visual_box.visualSfzsfl
+                    .visual_title
+                        span 示范区产量
+                        img(src='images/ksh33.png')
+                    #main9.visual_chart
+                    .visual_table
+                        table
+                            tbody
+                                tr
+                                    td
+                                    td 獐子岛
+                                    td 桑沟湾
+                                tr
+                                    td 鱼
+                                    td 2486万
+                                    td 2486万
+                                tr
+                                    td 虾
+                                    td 2486万
+                                    td 2486万
+                                tr
+                                    td 贝
+                                    td 2486万
+                                    td 2486万
+                .visual_box.visualSfzsfl
+                    .visual_title
+                        span 今日实时状况
+                        img(src='images/ksh33.png')
+                        div(style='width:100%;height:100%;float:left')
+                            #main5.visualSssf_right_box(style='height: 150px; width:33%;float:left')
+                            #main6.visualSssf_right_box(style='height: 150px; width:33%;float:left')
+                            #main7.visualSssf_right_box(style='height: 150px; width:33%;float:left')
+            .clear
+        script(type='text/javascript').
+            $(function () {
+                var a = $('.visualSssf_left a')
+                for (var i = 0; i < a.length; i++) {
+                    a[i].index = i;
+                    a[i].onclick = function () {
+                        for (var i = 0; i < a.length; i++) {
+                            a[i].className = ''
+                        }
+                        this.className = 'active'
+                    }
+                }
+                var sfzcllH = $('.sfzcll_box').height()
+                var sfzcllHtwo = sfzcllH - 2
+                $('.sfzcll_box').css('line-height', sfzcllH + 'px')
+                $('.sfzcll_smallBk>div').css('line-height', sfzcllHtwo + 'px')
+                //删除加载动画
+                $('#load').fadeOut(1000)
+                setTimeout(function () {
+                    $('#load').remove()
+                }, 1100);
+            })
+            var myChart1 = echarts.init(document.getElementById('main1'));
+            myChart1.setOption(option1);
+            var myChart2 = echarts.init(document.getElementById('main2'));
+            myChart2.setOption(option2);
+            //本月发生事件
+            var myChart3 = echarts.init(document.getElementById('main3'));
+            myChart3.setOption(option3);
+            var myChart31 = echarts.init(document.getElementById('main31'));
+            myChart31.setOption(option31);
+            var mySwiper1 = new Swiper('.visual_swiper1', {
+                autoplay: true, //可选选项，自动滑动
+                speed: 800, //可选选项，滑动速度
+                autoplay: {
+                    delay: 5000, //1秒切换一次
+                },
+            })
+            var myChart5 = echarts.init(document.getElementById('main5'));
+            myChart5.setOption(option5);
+            var myChart6 = echarts.init(document.getElementById('main6'));
+            myChart6.setOption(option6);
+            var myChart7 = echarts.init(document.getElementById('main7'));
+            myChart7.setOption(option7);
+            //中间地图
+            var myChart8 = echarts.init(document.getElementById('main8'));
+            myChart8.setOption(option8);

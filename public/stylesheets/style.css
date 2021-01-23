@@ -1,0 +1,24 @@
+
+input::-ms-input-placeholder {
+    text-align: center;
+    color: black;
+}
+
+input::-webkit-input-placeholder {
+    text-align: center;
+    color: black;
+}
+
+.jumbotron {
+    background-color: white;
+}
+
+i {
+    font-weight: bolder;
+    color: #cf2d28;
+}
+
+input {
+    text-align: center;
+    color: black;
+}
